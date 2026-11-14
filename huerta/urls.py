@@ -4,6 +4,7 @@ from .views import AgricultorViewSet
 
 router = DefaultRouter()
 router.register(r'agricultores', AgricultorViewSet)
+router.register(r'cultivos', CultivoViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
